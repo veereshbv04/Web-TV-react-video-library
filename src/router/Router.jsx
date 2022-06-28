@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { HomePage, NotFound, Login, SignUp, History } from "../pages";
+import { HomePage, NotFound, Login, SignUp, History, LikedPage } from "../pages";
 
 export default function Router(){
     return (
@@ -10,7 +10,7 @@ export default function Router(){
             <Route path="/login" element={<Login/>} />
             <Route path="/signup" element={<SignUp/>} />
             <Route path="/history" element={<History/>} />
-
+            <Route path="/liked" element={<LikedPage/>} />
         </Routes>
     )
 }
