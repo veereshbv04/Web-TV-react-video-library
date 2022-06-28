@@ -5,7 +5,7 @@ import {Header, Navbar} from "./components/index"
 
 function App() {
   return (
-    <div className="App">
+    <div className="dark">
       <Header/>
       <Navbar/>
       <Router/>

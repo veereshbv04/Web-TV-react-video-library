@@ -142,7 +142,12 @@ li{
     
     align-items: center;
 }
+/* 
 body{
+    background-color: var(--BACKGROUND-COLOR);
+} */
+
+div .dark{
     background-color: var(--BACKGROUND-COLOR);
 }
 .category-horizontal{
