@@ -1,4 +1,4 @@
-import {v4 as uuid} from "react";
+import {v4 as uuid} from "uuid";
 
 /**
  * Videos Database can be added here.
