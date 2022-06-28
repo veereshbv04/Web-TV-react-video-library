@@ -1,5 +1,21 @@
+import axios from "axios"
+import {useEffect} from "react"
 import { CategoryBar } from "../components"
 export default function HomePage(){
+
+    useEffect(()=>{
+        console.log("videos")
+        const fetchVideos = async ()=>{
+            const response = axios.get("/apid/videos");
+            if(response.status === 200){
+                const videos = response.data.videos
+                console.log(videos)
+            }else{
+                console.log("in homepage status not 200")
+            }
+        }
+    }, [])
+
     return (
         <div className="main-div">
         <div className="main-content">
