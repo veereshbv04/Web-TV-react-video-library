@@ -15,9 +15,17 @@
 }
 
 .dark{
+    --GRAY:#d1caca;
     --BACKGROUND-COLOR:#222938;
     --TEXT-COLOR:rgba(255, 255, 255, 0.92);
     --CARD-BACKGROUND:#323e58;
+}
+
+.light{
+     /* --GRAY:#484141;
+     
+    --BACKGROUND-COLOR:#bacdf24b; */
+    --CARD-BACKGROUND:rgb(207, 216, 234);
 }
 
 html, body{
@@ -125,6 +133,7 @@ li{
     background-color: var(--TEXT-COLOR);
     color: var(--BACKGROUND-COLOR);
     transition: 0.5s;
+
     cursor: pointer;
 }
 
