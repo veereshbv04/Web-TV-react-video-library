@@ -8,7 +8,7 @@ export default function Header(){
 
     return (
         <div className="header">
-        <a href="#"><div className="brand-name"><img src={process.env.PUBLIC_URL + "assets/Web TV.png"}/>Web Tv</div></a>
+        <a href="#"><div className="brand-name"><img src={process.env.PUBLIC_URL + "assets/webtv.png"}/>Web Tv</div></a>
         <div className="searchbar"><input className="user-search" placeholder="Search here"/></div>
         <div className="header-cta">
            {theme==="dark"?<MdWbSunny onClick={()=>setTheme("light")} className="icons"/>:<MdNightlight onClick={()=>setTheme("dark")} className="icons"/>}

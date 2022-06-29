@@ -63,6 +63,11 @@ li{
 .brand-name{
      font-weight: bolder;
     letter-spacing: 5px;
+    /* FOR BRAND LOGO */
+   
+}
+.brand-name img{
+     max-height: 1rem;
 }
 .header-cta{
     /* background-color: rgb(112, 207, 245); */
@@ -221,6 +226,13 @@ div .dark{
 
 .video-texts p{
     color: var(--GRAY);
+}
+.video-title{
+    height: 57px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: break-spaces; 
 }
 
 .no-data{
