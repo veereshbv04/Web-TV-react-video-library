@@ -1,16 +1,20 @@
 
-export default function VideoCard(){
+export default function VideoCard({videodata}){
+    const {thumbnail, logo, title, creator, views} = videodata
+
     return (
         <div className="video-card">
-            <img src="https://i.ytimg.com/vi/TUVcZfQe-Kw/mqdefault.jpg" />
+            <img src={thumbnail} />
                 <div className="video-details">
-                    <img src="https://yt3.ggpht.com/ytc/AKedOLQFII48R0atMndxGz1n5quE7W1VIpMvJxNnGlUYFg=s68-c-k-c0x00ffffff-no-rj" />
+                    <img src={logo}/>
                     <div className="video-texts">
-                        <h3 className="video-title">Learn JavaScript today fewfregvrsrdgrsgfdg</h3>
-                        <p>JavaScript.io</p>
-                        <p>36K views</p>
+                        <h3 className="video-title">{title}</h3>
+                        <p>{creator}</p>
+                        <p>{views}</p>
                     </div>
                 </div>
         </div>
+        
+        // <h1>{title}</h1>
     )
 }
