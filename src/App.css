@@ -229,3 +229,8 @@ div .dark{
     width: 5rem;
     align-items: center;
 }
+
+.icons{
+    font-size: 2rem;
+    cursor: pointer;
+}

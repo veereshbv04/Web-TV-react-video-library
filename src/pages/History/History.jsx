@@ -1,7 +1,7 @@
 export default function History(){
     return (
-        <div class="main-div">
-        <div class="main-content">
+        <div className="main-div">
+        <div className="main-content">
             
             <div className="video-listing">
 
