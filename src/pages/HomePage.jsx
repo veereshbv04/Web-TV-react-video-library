@@ -10,7 +10,7 @@ export default function HomePage(){
                 <CategoryBar/>
                 <div className="video-listing">
 
-                    {allvideos.map( video =>
+                    {allvideos.map(video =>
                         <VideoCard videodata={video} key={video._id}/>
                      )}
 

@@ -14,7 +14,5 @@ export default function VideoCard({videodata}){
                     </div>
                 </div>
         </div>
-        
-        // <h1>{title}</h1>
     )
 }
