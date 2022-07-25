@@ -2,6 +2,7 @@ import {MdNightlight, MdWbSunny} from "react-icons/md"
 import { AiOutlineUser } from "react-icons/ai";
 
 import { useTheme } from "../contexts";
+import {Link} from "react-router-dom";
 
 export default function Header(){
     const {theme, setTheme} = useTheme()
@@ -13,7 +14,8 @@ export default function Header(){
         <div className="header-cta">
            {theme==="dark"?<MdWbSunny onClick={()=>setTheme("light")} className="icons"/>:<MdNightlight onClick={()=>setTheme("dark")} className="icons"/>}
           
-            <AiOutlineUser  className="icons"/>
+          <Link to="/login"><AiOutlineUser className="icons"/></Link>
+            
            
         </div>
     </div>
