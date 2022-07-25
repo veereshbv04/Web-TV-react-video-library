@@ -14,7 +14,7 @@ export default function Header(){
         <div className="header-cta">
            {theme==="dark"?<MdWbSunny onClick={()=>setTheme("light")} className="icons"/>:<MdNightlight onClick={()=>setTheme("dark")} className="icons"/>}
           
-          <Link to="/login"><AiOutlineUser className="icons"/></Link>
+          <Link to="/signup"><AiOutlineUser className="icons"/></Link>
             
            
         </div>
